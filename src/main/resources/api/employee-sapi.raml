@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: employee-sapi
+
+/employee:
+  get:    
+    queryParameters:
+      empId:
+          type: string
+          required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"status": "retrieve employee successfully"}
